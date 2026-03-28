@@ -69,4 +69,3 @@ npm run lint
 
 ## Notes
 
-This README is a starting point — update with environment variables, deployment instructions, and any API details as needed.
