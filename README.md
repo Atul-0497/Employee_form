@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# employee-form
 
-## Getting Started
+A small Next.js + TypeScript + Tailwind CSS project for an employee form UI.
 
-First, run the development server:
+This repository contains a multi-section employee form (personal, work, images, other) and a table view. It demonstrates using React Hook Form, Zod for validation, and Tailwind for styling.
+
+## Features
+
+- Multi-section employee form components
+- Client-side form validation with `react-hook-form` and `zod`
+- Reusable UI components in `src/components/ui`
+- Simple API service layer in `src/features/employee/services`
+
+## Tech stack
+
+- Next.js
+- React + TypeScript
+- Tailwind CSS
+- react-hook-form, zod
+
+## Getting started
+
+Prerequisites: Node.js (16+) and npm.
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Build for production:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run build
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Start production server:
 
-## Learn More
+```bash
+npm run start
+```
 
-To learn more about Next.js, take a look at the following resources:
+Lint (if configured):
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run lint
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Project structure
 
-## Deploy on Vercel
+- `app/` — Next.js app routes and global styles
+- `public/` — Static assets
+- `src/components/ui/` — Reusable UI primitives
+- `src/features/employee/` — Employee feature (components, hooks, services, types)
+- `src/lib/` — Utility helpers
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Key files
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `src/features/employee/components/EmployeeForm.tsx` — main form component
+- `src/features/employee/hooks/useEmployee.ts` — form hook
+- `src/features/employee/services/employeeApi.ts` — API service
+- `src/features/employee/types/employee.schema.ts` — validation schemas
+
+## Notes
+
+This README is a starting point — update with environment variables, deployment instructions, and any API details as needed.
