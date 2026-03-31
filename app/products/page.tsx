@@ -13,7 +13,7 @@ export default function Home() {
 
   useEffect(() => {
     fetch(
-      "http://saptechno-001-site10.anytempurl.com/api/AjaxAPI/SelectproductMaster",
+      "https://saptechno-001-site10.anytempurl.com/api/AjaxAPI/SelectproductMaster",
       {
         method: "POST",
         headers: {
