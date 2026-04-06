@@ -20,7 +20,6 @@ export default function AddProduct() {
     e.preventDefault();
     setLoading(true);
 
-    // 🔥 Category-wise description
     let descriptionData: any = { title };
 
     if (categoryId === 1) {
@@ -39,7 +38,6 @@ export default function AddProduct() {
       descriptionData = { title, location, description: desc };
     }
 
-    // ✅ Final object (ONLY required fields)
     const product = {
       Productid: 0,
       Name: name,
